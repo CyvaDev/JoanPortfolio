@@ -28,7 +28,7 @@
 
     nav a {
       display: inline-block;
-      background-color: #333;
+      background-color: #000000;
       color: white;
       padding: 10px 20px;
       margin: 0 10px;
@@ -46,17 +46,17 @@
     section {
       padding: 1px 20px 100px;
       min-height: 50vh;
-      background-color: #f4f4f4;
+      background-color: #000000;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    #inicio { background: #293133; }
-    #proyectos { background: #293133; }
-    #sobre-mi { background: #293133; }
-    #contacto { background: #293133; }
+    #inicio { background: #000000; }
+    #proyectos { background: #000000; }
+    #sobre-mi { background: #000000; }
+    #contacto { background: #000000; }
 
     #proyecto1, #proyecto2, #proyecto3, #proyecto4, #proyecto5 {
-      background: #3D0301;
+      background: #000000;
       border-radius: 1px;
       border: 2px solid #000000;
     }
@@ -73,7 +73,7 @@
       flex-direction: column;
       width: 275px;
       height: 275px;
-      background: #3D0301;
+      background: #000000;
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       overflow: hidden;
@@ -189,24 +189,6 @@
     #right-container: {
       text-align:right;
     }
-
-      .boton-see-more {
-          display: inline-block;
-          margin-top: 20px;
-          background-color: #E8C999;
-          color: #3D0301;
-          font-weight: bold;
-          padding: 10px 20px;
-          border: none;
-          border-radius: 999px;
-          text-decoration: none;
-          transition: background-color 0.3s ease, transform 0.2s ease;
-      }
-
-          .boton-see-more:hover {
-              background-color: #ffd700;
-              transform: scale(1.05);
-          }
   </style>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -223,202 +205,155 @@
 
   <section id="inicio">
     <h1>Joan Lonzi Atencio</h1>
-    <h2 style="color: #E8C999; font-weight: normal; font-size: 2rem; margin-top: -40px; margin-bottom: 20px;">Game Designer – Level Design & UI</h2>
+    <h2 style="color: #E8C999; font-weight: normal; font-size: 2rem; margin-top: -40px; margin-bottom: 20px;">Game Designer – Level Design & UX Design</h2>
   </section>
 
   <section id="proyectos">
-    <h2>Projects</h2>
-    <div class="proyectos-grid">
-      <a href="#proyecto1" class="proyecto-card">
-        <img src="./images/TirisLogo.png" alt="Proyecto 1" />
-        <div class="texto">
-          <h3>Top Down Shooter Game</h3>
-          <p>Tiris, is a 3D Top Down Shooter Dual Stick with a touch of dark fantasy, made in ESAT by Cremaet Studios.</p>
-        </div>
-      </a>
-      <a href="#proyecto2" class="proyecto-card">
-        <img src="./gifs/BitsyGIF.gif" alt="Proyecto 2" />
-        <div class="texto">
-          <h3>Bitsy Game</h3>
-          <p> A small narrative game made with bitsy, about a terrible crime and a professional detective.</p>
-        </div>
-      </a>
-      <a href="#proyecto3" class="proyecto-card">
-        <img src="./images/Mot_Screenshot2.png" alt="Proyecto 3" />
-        <div class="texto">
-          <h3>TPS ARPG Game</h3>
-          <p>A blockout project, inspired in games like Dead Space.</p>
-        </div>
-      </a>
-      <a href="#proyecto4" class="proyecto-card">
-        <img src="./gifs/SkiingOnIceGIF.gif" alt="Proyecto 4" />
-        <div class="texto">
-          <h3>Puzzle Script Game</h3>
-          <p>A sliding game with simple puzzles. Game made with PuzzleScript.</p>
-        </div>
-      </a>
-<a href="#proyecto5" class="proyecto-card">
-        <img src="./gifs/CLICKGIF.gif" alt="Proyecto 5" />
-        <div class="texto">
-          <h3>Idle Game</h3>
-          <p>Ide Icecube Farm is a little game made under 3 days, inspired in games like Cookie Clicker.</p>
-        </div>
-      </a>
-    </div>
-  </section>
+  <h2>Projects</h2>
+
+  <div class="proyectos-grid" style="flex-direction: column; align-items: center;">
+
+    <a href="#proyecto1" class="proyecto-card" style="width: 85%; height: 320px;">
+      <img src="./images/TirisLogo.png" alt="Proyecto 1" />
+      <div class="texto">
+        <h3 style="text-align: center;">Tiris (Top-Down Shooter)</h3>
+        <p>This is a videogame made by 20 people, made in ESAT.</p>
+      </div>
+    </a>
+
+    <a href="#proyecto2" class="proyecto-card" style="width: 85%; height: 320px;">
+      <img src="./gifs/BitsyGIF.gif" alt="Proyecto 2" />
+      <div class="texto">
+        <h3 style="text-align: center;">Bitsy Game</h3>
+        <p>A small narrative game made with bitsy, about a terrible crime and a professional detective.</p>
+      </div>
+    </a>
+
+    <a href="#proyecto3" class="proyecto-card" style="width: 85%; height: 320px;">
+      <img src="./gifs/CLICKGIF.gif" alt="Proyecto 3" />
+      <div class="texto">
+        <h3 style="text-align: center;">Idle Game</h3>
+        <p>Ide Icecube Farm is a little game made under 3 days, inspired in games like Cookie Clicker.</p>
+      </div>
+    </a>
+
+    <a href="#proyecto4" class="proyecto-card" style="width: 85%; height: 320px;">
+      <img src="./gifs/SkiingOnIceGIF.gif" alt="Proyecto 4" />
+      <div class="texto">
+        <h3 style="text-align: center;">Puzzle Script Game</h3>
+        <p>A sliding game with simple puzzles. Game made with PuzzleScript.</p>
+      </div>
+    </a>
+
+    <a href="#proyecto5" class="proyecto-card" style="width: 85%; height: 320px;">
+      <img src="./images/Mot_Screenshot2.png" alt="Proyecto 5" />
+      <div class="texto">
+        <h3 style="text-align: center;">TPS ARPG Game</h3>
+        <p>A blockout project, inspired in games like Dead Space.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
 
   <section id="sobre-mi">
     <h2>About Me</h2>
     <div class="recuadro-contacto" style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
       <img src="./images/PhotoCurriculumJoan.jpg" alt="Foto de Joan" style="width: 200px; border-radius: 12px;">
       <p style="flex: 1;">
-Hi! I’m Joan, a game designer passionate about Level Design and UI Design. I used to dream of being an architect, until I discovered Game Design and found a way to build worlds, tell stories, and create experiences all at once.<br><br>
-
-I love crafting levels that challenge and immerse players, and designing intuitive interfaces that make gameplay smooth and engaging.<br><br>
-
-Outside of games, I enjoy photography and playing guitar, two hobbies that keep my creativity alive and help me see the world from new angles.<br><br>
-
-I’m always open to new projects, collaborations, and ways to keep growing as a designer.
+        Hi! I'm Joan, a young and passionate game designer specializing in Level Design and UI Design. I've been fascinated by video games since I was a kid, and for years I dreamed of becoming an architect until I discovered the world of Game Design.<br><br>
+        That’s when I found my true calling: creating interactive experiences that blend visual design, storytelling, and gameplay.<br><br>
+        Right now, I’m focused on sharpening my skills as a Level Designer, crafting playable spaces that not only challenge players but also tell stories and enhance immersion.<br><br>
+        I'm also deeply interested in UI Design, as I believe a clear and intuitive interface is essential for a smooth and enjoyable gaming experience.<br><br>
+        I'm always looking for new challenges, collaborations, and projects where I can grow as a professional and bring my creativity to the table.
       </p>
     </div>
   </section>
 
   <section id="proyecto1">
-      <h2>Top Down Shooter Game - Tiris Videogame</h2>
-      <p>
-Tiris is a non-profit academic portfolio project that showcases the talents of our team and the dedication poured into its development.<br><br>
-        Launching in Early Access, we seek to engage with the community, gather feedback, and enhance the player experience.<br><br>
-        
-        Infiltrate in Tiris Cathedral and recover your beloved's soul in this medieval, lowdark fantasy Top-Down Shooter.<br><br>
-        Deal with hordes of enemies, solve the puzzles that block your path,<br><br>
-        and free your loved one and the people from the tyranny of the Necromancer and his commanders.
-      </p>
+      <h2>Idle Game - Idle Icecube Farm</h2>
+      <p>Idle Icecube Farm is a small video game developed in under three days, inspired by titles like Cookie Clicker.<br><br>
+IIF (Idle Icecube Farm) is an idle clicker with a playtime of around 20 minutes, where your goal is to produce as many ice cubes per second as possible.<br><br>
+Created using Construct 3 and developed solo.</p>
       <div style="display: flex; justify-content: center;">
-          <img src="./images/TirisLogo.png" style="width: 15%; height: auto; padding: 9px;">
-        <img src="./images/TirisPhotoScenario2.png" style="width: 15%; height: auto; padding: 9px;">
-        <img src="./images/TirisPhotoScenario.png" style="width: 15%; height: auto; padding: 9px;">
+          <img src="./images/iDLE_icecube_screnshot_start.png" style="width: 15%; height: 15%; padding: 9px;">
       </div>
-      <div style="text-align: center;">
-          <a href="https://store.steampowered.com/app/3719100/Tiris/?curator_clanid=4777282" class="boton-see-more" target="_blank">See More</a>
+      <div style="display: flex; justify-content: center;">
+          <img src="./images/Idle_Icecube_Screnshot_2.png" style="width: 15%; height: 15%; padding-top: 20px;">
       </div>
   </section>
 
-      <section id="proyecto2">
-          <h2>Bitsy Game - An unsolved Case.</h2>
-          <p>
-              "A detective trapped in a spiral of mystery and blood, where every clue brings him closer to the truth... and danger. Can you uncover the killer before it's too late?"<br><br>
-              An Unsolved Case is a short 2D narrative game made in Bitsy, where you take on the role of a detective trying to solve a brutal murder.<br><br>
-            
-              Created by me as a personal experiment in minimalist storytelling and limited design tools.<br><br>
-              The game was developed in just a few days using Bitsy, with a focus on atmosphere, tension, and narrative pacing through simple visuals and interactions.
-          </p>
-          <div style="display: flex; justify-content: center;">
-              <img src="./images/Bitsy1Screenshot.png" style="width: 15%; height: auto; padding: 9px;">
-              <img src="./images/Bitsy3Screenshot.png" style="width: 15%; height: auto; padding: 9px;">
-              <img src="./images/Bitsy4Screenshot.png" style="width: 15%; height: auto; padding: 9px;">
-          </div>
-          <div style="text-align: center;">
-          <a href="https://cyva.itch.io/unsolvedcase" class="boton-see-more" target="_blank">See More</a>
-      </div>
-      </section>
+  <section id="proyecto2">
+    <h2>Bitsy Game - An unsolved Case.</h2>
+    <p>"A detective trapped in a spiral of mystery and blood, where every clue brings him closer to the truth... and danger. Can you uncover the killer before it's too late?"<br><br>
+An Unsolved Case is a short 2D narrative game made in Bitsy, where you take on the role of a detective trying to solve a brutal murder.<br><br>
+<br><br>
+Created by me as a personal experiment in minimalist storytelling and limited design tools.<br><br>
+The game was developed in just a few days using Bitsy, with a focus on atmosphere, tension, and narrative pacing through simple visuals and interactions.</p>
+  </section>
 
-      <section id="proyecto3">
-          <h2>TPS ARPG Game - No Oxygen Left!</h2>
-          <p>
-              No Oxygen Left! is a small third-person ARPG game developed over the course of three months.<br><br>
-              It features mechanics inspired by games like Dead Space, where oxygen is limited and players must scavenge for capsules scattered throughout the world while fighting off enemies.<br><br>
+  <section id="proyecto3">
+    <h2>Top Down Shooter Game - Tiris Videogame</h2>
+    <p>Top Down Shooter Videogame in Development<br><br>
+      Made in Esat.</p>
+  </section>
 
-              This project focuses on level blocking and the use of design techniques such as foreshadowing in specific rooms. Verticality was also a key goal, aiming to create a more dynamic and less flat environment.<br><br>
-              The constant search for oxygen adds a continuous layer of tension, the core experience the game is built around..
-          </p>
-          <div style="display: flex; justify-content: center;">
-              <img src="./images/Mot_Screenshot6.png" style="width: 15%; height: auto; padding: 9px;">
-              <img src="./images/Mot_Screenshot2.png" style="width: 15%; height: auto; padding: 9px;">
-              <img src="./images/Mot_Screenshot7.png" style="width: 15%; height: auto; padding: 9px;">
-          </div>
-          <div style="text-align: center;">
-              <a href="https://bsky.app/profile/cyvadev.bsky.social/post/3lmefjxll722w" class="boton-see-more" target="_blank">See More</a>
-          </div>
-      </section>
+  <section id="proyecto4">
+    <h2>Puzzle Script Game - Skiing on ICE</h2>
+    <p>Skiing on ICE! is a simple yet challenging 2D puzzle game built with PuzzleScript, where every move counts!<br><br>
+Glide across slippery ice, carefully planning each slide to reach your goal without overshooting.<br><br>
+The game was developed in just 4 days as a creative exercise in constraint-based design, using PuzzleScript's minimalistic tools to focus on smart level design and satisfying mechanics.</p>
+  </section>
+  <section id="proyecto5">
+    <h2>TPS ARPG Game - No Oxygen Left!</h2>
+    <p>No Oxygen Left! is a third-person ARPG developed over the course of three months.<br><br>
+It features mechanics inspired by games like Dead Space, where oxygen is limited and players must scavenge for capsules scattered throughout the world while fighting off enemies.<br><br>
+<br><br>
+This project focuses on level blocking and the use of design techniques such as foreshadowing in specific rooms. Verticality was also a key goal, aiming to create a more dynamic and less flat environment.<br><br>
+The constant search for oxygen adds a continuous layer of tension, the core experience the game is built around..</p>
+  </section>
+  <section id="contacto">
+    <h2>Contact</h2>
+    <div class="recuadro-contacto">
+      <p>You can find me on the following platforms where I share my projects, progress, and more about the world of game design:<br><br>
+Click on the middle one to see more platforms!<br><br>
+  My email: cyva.dev@gmail.com</p>
+    </div>
 
-      <section id="proyecto4">
-          <h2>Puzzle Script Game - Skiing on ICE</h2>
-          <p>
-              Skiing on ICE! is a simple yet challenging 2D puzzle game built with PuzzleScript, where every move counts!<br><br>
-              Glide across slippery ice, carefully planning each slide to reach your goal without overshooting.<br><br>
-              The game was developed in just 4 days as a creative exercise in constraint-based design, using PuzzleScript's minimalistic tools to focus on smart level design and satisfying mechanics.
-          </p>
-          <div style="display: flex; justify-content: center;">
-              <img src="./images/PuzzleScript2.png" style="width: 15%; height: auto; padding: 9px;">
-              <img src="./images/puzzlescript1.png" style="width: 15%; height: auto; padding: 9px;">
-          </div>
-          <div style="text-align: center;">
-              <a href="https://cyva.itch.io/skiing-on-ice" class="boton-see-more" target="_blank">See More</a>
-          </div>
-      </section>
-      <section id="proyecto5">
-          <h2>Idle Game - Idle Icecube Farm</h2>
-          <p>
-              Idle Icecube Farm is a small video game developed in under three days, inspired by titles like Cookie Clicker.<br><br>
-              IIF (Idle Icecube Farm) is an idle clicker with a playtime of around 20 minutes, where your goal is to produce as many ice cubes per second as possible.<br><br>
-              Created using Construct 3 and developed solo.
-          </p>
-          <div style="display: flex; justify-content: center;">
-              <img src="./images/iDLE_icecube_screnshot_start.png" style="width: 15%; height: auto; padding: 9px;">
-              <img src="./images/Idle_Icecube_Screnshot_2.png" style="width: 15%; height: auto; padding: 9px;">
-          </div>
-          <div style="text-align: center;">
-              <a href="https://cyva.itch.io/idle-icecube-farm" class="boton-see-more" target="_blank">See More</a>
-          </div>
-      </section>
-      <section id="contacto">
-          <h2>Contact</h2>
-          <div class="recuadro-contacto">
-              <p>
-                  You can find me on the following platforms where I share my projects, progress, and more about the world of game design:<br><br>
-                  Click on the middle one to see more platforms!<br><br>
-                  My email: cyva.dev@gmail.com
-              </p>
-          </div>
+    <div class="iconos-redes">
+      <a href="https://www.linkedin.com/in/joan-lonzi-atencio/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://linktr.ee/cyva.dev" target="_blank" aria-label="Bluesky">
+        <i class="fa-solid fa-link"></i>
+      </a>
+      <a href="https://github.com/CyvaDev" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
 
-          <div class="iconos-redes">
-              <a href="https://www.linkedin.com/in/joan-lonzi-atencio/" target="_blank" aria-label="LinkedIn">
-                  <img src="./images/linkedin-brands.svg" style="width: 24px; height: auto; padding: 9px;">
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById("navbar");
+    let isScrolling;
 
-              </a>
-              <a href="https://linktr.ee/cyva.dev" target="_blank" aria-label="Links">
-                  <img src="./images/link-solid.svg" style="width: 24px; height: auto; padding: 9px;">
-              </a>
-              <a href="https://bsky.app/profile/cyvadev.bsky.social" target="_blank" aria-label="BlueSky">
-                  <img src="./images/square-bluesky-brands.svg" style="width: 24px; height: auto; padding: 9px;">
-              </a>
-              <a href="https://cyva.itch.io/" target="_blank" aria-label="Itchio">
-                  <img src="./images/itch-io-brands.svg" style="width: 24px; height: auto; padding: 9px;">
-              </a>
-          </div>
-      </section>
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      <script>
-          let lastScrollTop = 0;
-          const navbar = document.getElementById("navbar");
-          let isScrolling;
+      if (scrollTop > lastScrollTop) {
+        navbar.style.top = "-80px";
+      } else {
+        navbar.style.top = "0";
+      }
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 
-          window.addEventListener("scroll", () => {
-              const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-              if (scrollTop > lastScrollTop) {
-                  navbar.style.top = "-80px";
-              } else {
-                  navbar.style.top = "0";
-              }
-              lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-
-              clearTimeout(isScrolling);
-              isScrolling = setTimeout(() => {
-                  navbar.style.top = "0";
-              }, 150);
-          });
-      </script>
+      clearTimeout(isScrolling);
+      isScrolling = setTimeout(() => {
+        navbar.style.top = "0";
+      }, 150);
+    });
+  </script>
 
 </body>
 </html>
